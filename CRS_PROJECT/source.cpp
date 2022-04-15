@@ -4,6 +4,7 @@ int main()
 	read_from_index_file();
 	read_from_car_file();
 	read_from_customer_file();
+	read_from_admin_file();
 	char x;
 	do
 	{

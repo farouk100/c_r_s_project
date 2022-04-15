@@ -1,6 +1,7 @@
 #pragma once
 #include "Our_Variables.h"
 
+
 void read_from_index_file()
 {
 	index_file.open("index.txt", ios::in);
@@ -68,6 +69,18 @@ void read_from_customer_file()
 		my_customer_file.close();
 	}
 }
+
+void read_from_admin_file()
+{
+	my_admin_file.open("admin.txt", ios::in);
+		for (int a = 0; a < num_of_admin; a++)
+		{
+			getline(my_admin_file, admin[a].username,'#');
+			getline(my_admin_file,admin[a].password,'#');
+		}
+		my_admin_file.close();
+}
+
 
 void add_new_car_to_array()
 {

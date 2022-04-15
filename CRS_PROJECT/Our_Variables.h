@@ -32,12 +32,21 @@ struct Customer
 	int age;
 	rentals cusromer_rental[the_allowed_rentals_for_customer];
 };
+
+struct Admin
+{
+	string username, password;
+};
 fstream index_file;
 fstream my_file;
 fstream my_customer_file;
+fstream my_admin_file;
 string check_st;
 int i, j;
 #define car_Array_Size 10
 Car car[car_Array_Size] = {};
 #define customer_array_size 10
 Customer customer[customer_array_size] = {};
+
+#define num_of_admin 6
+Admin admin[num_of_admin] = {};
